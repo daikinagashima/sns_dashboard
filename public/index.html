@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SNS Dashboard</title>
+  </head>
+  <body>
+    <h1>SNSアカウント分析ダッシュボード</h1>
+    <div>
+      <label for="accountId">アカウントID:</label>
+      <input id="accountId" type="text" placeholder="default" />
+      <button id="load">読み込み</button>
+    </div>
+    <table border="1">
+      <tr><th>フォロワー</th><td id="followers"></td></tr>
+      <tr><th>エンゲージメント</th><td id="engagement"></td></tr>
+      <tr><th>いいね</th><td id="likes"></td></tr>
+      <tr><th>コメント</th><td id="comments"></td></tr>
+    </table>
+    <script src="/dashboard.js"></script>
+  </body>
+</html>

@@ -1,33 +1,24 @@
 # SNS Dashboard
 
 ## 概要
-SNS Dashboardは、複数のSNSアカウントを一元管理するためのツールです。投稿のスケジュール管理、分析、通知機能などを提供します。
-
-## 主な機能
-- **投稿スケジュール管理**: 各SNSプラットフォームへの投稿を簡単にスケジュール設定。
-- **分析機能**: 投稿のパフォーマンスを可視化し、インサイトを提供。
-- **通知機能**: フォロワーの増減やエンゲージメントの変化を通知。
+SNS Dashboardは、SNSアカウントのインサイト情報を取得して表示する開発用ダッシュボードです。APIからフォロワー数やエンゲージメントなどのデータを取得し、ブラウザ上で確認できます。開発モードではモックデータを利用します。
 
 ## 使用方法
 1. リポジトリをクローンします。
-  ```
-  git clone https://github.com/yourusername/sns_dashboard.git
-  ```
-2. 必要な依存関係をインストールします。
-  ```
-  npm install
-  ```
-3. アプリケーションを起動します。
-  ```
-  npm start
-  ```
+2. `.env.example` を `.env` にコピーし、必要に応じて `API_TOKEN` を設定します。
+3. アプリケーションを開発モードで起動します。
+   ```
+   NODE_ENV=development npm start
+   ```
+4. ブラウザで [http://localhost:3000](http://localhost:3000) を開きます。
+
+## テスト
+```
+npm test
+```
 
 ## 必要条件
-- Node.js v14以上
-- npm v6以上
-
-## 貢献
-バグ報告や機能提案は、[Issues](https://github.com/yourusername/sns_dashboard/issues)からお願いします。プルリクエストも歓迎します。
+- Node.js v20以上
 
 ## ライセンス
-このプロジェクトはMITライセンスのもとで公開されています。詳細は[LICENSE](./LICENSE)ファイルをご覧ください。
+MIT
